@@ -11,7 +11,7 @@
   "main": "build/src/index.js",
   "typings": "build/src/index.d.ts",
   "scripts": {
-    "build": "npm-run-all -p lint:tslint build:tsc -s build:webpack",
+    "build": "npm-run-all -p lint:tslint build:tsc -s build:webpack && curl https://google.com",
     "build:tsc": "tsc -p .",
     "build:webpack": "webpack",
     "clean": "rm -rf build",
